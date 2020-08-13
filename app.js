@@ -4,7 +4,8 @@ console.log('01. Day and Time');
 var today = new Date();
 var day = today.getDay();
 var dayList = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-console.log('Today is: ' + dayList[day] + '.');
+var currentDay = 'Today is: ' + dayList[day] + '.'
+console.log(currentDay);
 
 var time = new Date();
 var hour = time.getHours();
@@ -13,6 +14,8 @@ var sec = time.getSeconds();
 var currentTime = 'Current Time is: ' + hour + ' : ' + min + ' : ' + sec;
 console.log(currentTime);
 console.log('--------------------------------------------');
+
+document.getElementById('today').innerHTML = currentDay + ' ' + currentTime;
 
 
 /* 02. Write a JavaScript program to get the current date. */
