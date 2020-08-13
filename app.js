@@ -13,16 +13,22 @@ var min = time.getMinutes();
 var sec = time.getSeconds();
 var currentTime = 'Current Time is: ' + hour + ' : ' + min + ' : ' + sec;
 console.log(currentTime);
+document.getElementById('today').innerHTML = currentDay + ' ' + currentTime;
+
 console.log('--------------------------------------------');
 
-document.getElementById('today').innerHTML = currentDay + ' ' + currentTime;
+
 
 
 /* 02. Write a JavaScript program to get the current date. */
+console.log('02. Current Date');
 
 var date = new Date();
-
 document.getElementById('date').innerHTML = date;
+
+console.log('--------------------------------------------');
+
+
 
 
 /* 03. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7. */
@@ -32,10 +38,12 @@ var side1 = 5;
 var side2 = 6;
 var side3 = 7;
 var sides = (side1 + side2 + side3)/2;
-
 var area = Math.sqrt(sides * ((sides - side1) * (sides - side2) * (sides - side3)));
 console.log(area);
+
 console.log('--------------------------------------------');
+
+
 
 
 /* 04. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front. */
@@ -53,4 +61,9 @@ setInterval(function ()
   textNode.data = text;
 }, 100);
 }
+
 console.log('--------------------------------------------');
+
+
+
+/* 05. */
