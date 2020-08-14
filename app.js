@@ -41,6 +41,8 @@ var sides = (side1 + side2 + side3)/2;
 var area = Math.sqrt(sides * ((sides - side1) * (sides - side2) * (sides - side3)));
 console.log(area);
 
+document.getElementById('area').innerHTML = area;
+
 console.log('--------------------------------------------');
 
 
@@ -79,19 +81,22 @@ console.log(leapyear(2004));
 console.log(leapyear(1708));
 console.log(leapyear(1803));
 
+document.getElementById('year').innerHTML = leapyear(1999);
+
 console.log('--------------------------------------------');
 
 
 
 
 /* 06. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050 */
-console.log('--------------------------------------------');
+console.log('06. Write a JavaScript Program to Find 1st January');
 
 for (var year = 2014; year <= 2050; year++) {
 
     var day = new Date(year, 0, 1);
     if ( day.getDay() === 0 ) {
         console.log("1st January is being a Sunday  " + year);
+        document.getElementById('dayAndYear').innerHTML = "1st January is being a Sunday  " + year;
     }
 }
 
@@ -101,5 +106,21 @@ console.log('--------------------------------------------');
 
 
 /* 07. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched" */
+console.log('07. Random Integer Between 1 to 10');
+
+var user = Math.round(Math.random() * 10);
+var guessNum = prompt('Guess the number between 1 and 10 inclusive');
+
+if(guessNum === user) {
+  document.getElementById('num').innerHTML = 'Matched';
+} else {
+  document.getElementById('num').innerHTML = 'Not matched, the number was '+ guessNum;
+}
+
 console.log('--------------------------------------------');
 
+
+
+
+/* 08. Write a JavaScript program to calculate days left until next Christmas */
+console.log('08. Calculate Days Left Until Next Christmas');
