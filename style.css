@@ -1,0 +1,14 @@
+#divCalc {
+    display: block;
+}
+#firstDiv {
+    display: flex;
+    margin-bottom: 10px;
+}
+#secondDiv {
+    display: flex;
+}
+
+#btn {
+    display: inline;
+}

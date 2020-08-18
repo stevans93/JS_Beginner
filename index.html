@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body onload="animate_string('rotate')">
@@ -45,6 +46,33 @@
     <hr>
     <p>08. Calculate Days Left Until Next Christmas</p>
     <p id="christmas"></p>
+
+    <!-- 09. Write a JavaScript program to calculate multiplication and division of two numbers (input from user) -->
+    <hr>
+    <p>09. Simple Calculator</p>
+    <dvi id="divCalc">
+        <div id="firstDiv">
+            <p>1st Number : </p>
+            <input id="firstNumber" type="text">
+        </div>
+    
+        <div id="secondDiv">
+            <p>2st Number : </p>
+            <input id="secondNumber" type="text">
+        </div>
+
+        <div class="btn">
+            <button id="btnOne" onclick="multiplyBy()" value="Multiply">Multiply</button>
+            <button id="btnTwo" onclick="divideBy()" value="Divide">Divide</button>
+        </div>
+    </dvi>
+    <p>The Result Is :</p>
+    <p id="result"></p>
+    
+    <!-- 10. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit -->
+    <hr>
+    <p>10. Program To Convert Temperatures</p>
+    
 
 
     <script src="app.js"></script>

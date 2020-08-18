@@ -124,3 +124,56 @@ console.log('--------------------------------------------');
 
 /* 08. Write a JavaScript program to calculate days left until next Christmas */
 console.log('08. Calculate Days Left Until Next Christmas');
+
+var today = new Date();
+var christmas = new Date(today.getFullYear(), 11, 25);
+
+if(today.getMonth() == 11 && christmas.getDay() > 25) {
+  christmas.setFullYear(christmas.getFullYear() + 1);
+}
+
+var oneDay = 1000 * 60 * 60 * 24;
+
+console.log(Math.ceil((christmas.getTime() - today.getTime()) / (oneDay)) + " days left until Christmas!");
+
+var fullDate = Math.ceil((christmas.getTime() - today.getTime()) / (oneDay));
+
+document.getElementById('christmas').innerHTML = fullDate + " days left until Christmas!";
+
+console.log('--------------------------------------------');
+
+
+
+
+/* 09. Write a JavaScript program to calculate multiplication and division of two numbers (input from user) */
+console.log('08. Simple Calculator');
+
+var firstNum = document.getElementById("firstNumber").value;
+var secondNum = document.getElementById("secondNumber").value;
+var result = document.getElementById("result");
+var multiply = firstNum * secondNum;
+var divide = firstNum / secondNum;
+
+function multiplyBy() {
+  firstNum.value;
+  secondNum.value
+  result.innerHTML = multiply;
+  console.log(result.innerHTML = multiply);
+  console.log('--------------------------------------------');
+}
+
+function divideBy() { 
+  firstNum.value;
+  secondNum.value
+  result.innerHTML = divide;
+  console.log(result.innerHTML = divide);
+  console.log('--------------------------------------------');
+}
+
+console.log('--------------------------------------------');
+
+
+
+
+/* 10. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit */
+console.log('10. Program To Convert Temperatures);
