@@ -177,3 +177,75 @@ console.log('--------------------------------------------');
 
 /* 10. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit */
 console.log('10. Program To Convert Temperatures');
+
+function calcTemp() {
+  var expOutput = document.getElementById('expOutput').value;
+
+  var fTemp = expOutput * 9 / 5 + 32;;
+  var cTemp = (expOutput - 32) * 5 / 9;
+
+  document.getElementById('calcTempP').innerHTML = 'Celsius to Fahrenheit: ' + cTemp + ' °C, Fahrenheit to Celsius: ' +  fTemp + ' °F';
+}
+
+console.log('--------------------------------------------');
+
+
+
+
+/* 11. Write a JavaScript program to get the website URL (loading page). */
+console.log('11. Write a JavaScript exercise to create a variable using a user-defined name.');
+
+function clickNum() {
+  var num = document.getElementById('numVar').value;
+
+  if( num <= 13) {
+    document.getElementById('numP').innerHTML = 13 - num;
+  } else {
+    document.getElementById('numP').innerHTML = (num - 13) * 2;
+  }
+}
+
+console.log('--------------------------------------------');
+
+
+
+
+/* 12. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum. */
+console.log('12. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.');
+
+function getNumInt() {
+  var numInt = parseInt(document.getElementById('getNumInt').value);
+  var numIntTwo = parseInt(document.getElementById('getNumIntTwo').value);
+
+  if( numInt == numIntTwo) {
+    var totalInt = (numInt + numIntTwo) * 3;
+    document.getElementById('postNumInt').innerHTML = totalInt;
+  } else {
+    var totalInt = numInt + numIntTwo;
+    document.getElementById('postNumInt').innerHTML = totalInt;
+  }
+}
+
+console.log('--------------------------------------------');
+
+
+
+
+/* 13. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19. */
+console.log('11. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.');
+
+function getNumIntPro() {
+  var getNumIntPro = parseInt(document.getElementById('getNumIntPro').value);
+
+  if(getNumIntPro <= 19) {
+    document.getElementById('postNumIntPro').innerHTML = 19 - getNumIntPro;
+  } else {
+    document.getElementById('postNumIntPro').innerHTML = (getNumIntPro - 19) * 3;
+  }
+}
+
+
+
+
+/* 14. (19.)Write a JavaScript program to check whether a given integer is within 20 of 100 or 400. */
+console.log('14. (19.)Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.');
